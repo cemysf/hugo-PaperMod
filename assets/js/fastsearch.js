@@ -23,7 +23,8 @@ window.onload = function () {
                             'title',
                             'permalink',
                             'summary',
-                            'content'
+                            'content',
+                            'tags'
                         ]
                     };
                     if (params.fuseOpts) {
@@ -34,7 +35,7 @@ window.onload = function () {
                             minMatchCharLength: params.fuseOpts.minmatchcharlength ? params.fuseOpts.minmatchcharlength : 1,
                             shouldSort: params.fuseOpts.shouldsort ? params.fuseOpts.shouldsort : true,
                             findAllMatches: params.fuseOpts.findallmatches ? params.fuseOpts.findallmatches : false,
-                            keys: params.fuseOpts.keys ? params.fuseOpts.keys : ['title', 'permalink', 'summary', 'content'],
+                            keys: params.fuseOpts.keys ? params.fuseOpts.keys : ['title', 'permalink', 'summary', 'content', 'tags'],
                             location: params.fuseOpts.location ? params.fuseOpts.location : 0,
                             threshold: params.fuseOpts.threshold ? params.fuseOpts.threshold : 0.4,
                             distance: params.fuseOpts.distance ? params.fuseOpts.distance : 100,

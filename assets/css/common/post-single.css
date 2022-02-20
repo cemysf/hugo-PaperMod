@@ -255,10 +255,11 @@
     color: var(--secondary);
     font-size: 14px;
     font-weight: normal;
+    text-align: center;
 }
 
 .toc {
-    margin: 0 2px 40px 2px;
+    margin: 0 2px 2rem 2px;
     border: 1px solid var(--border);
     background: var(--code-bg);
     border-radius: var(--radius);
@@ -303,7 +304,7 @@
 .post-tags li {
     display: inline-block;
     margin-inline-end: 3px;
-    margin-bottom: 5px;
+    margin-bottom: 2rem;
 }
 
 .post-tags a,

@@ -68,6 +68,14 @@
   </footer>
   {{- end }}
   <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+  {{- if .Params.tags }}
+  <ul class="post-tags">
+    {{- range ($.GetTerms "tags") }}
+    <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+    {{- end }}
+  </ul>
+  {{- end }}
+
 </article>
 {{- end }}
 
